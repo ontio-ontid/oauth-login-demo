@@ -24,7 +24,7 @@ export default {
   methods: {
     handleLogin(provider) {
       const redirect_url = encodeURIComponent(window.location.origin + '/home')
-      const url = `http://signin.chinaeast.cloudapp.chinacloudapi.cn:10390/oauthmiddle?dapp_ontid=${this.dapp_ontid}&oauth_type=${provider}&redirect_url=${redirect_url}&lang=zh`
+      const url = `http://139.219.136.188:10390/oauthmiddle?dapp_ontid=${this.dapp_ontid}&oauth_type=${provider}&redirect_url=${redirect_url}&lang=zh`
       window.location.href = url
     }
   }
